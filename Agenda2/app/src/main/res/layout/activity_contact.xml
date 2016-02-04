@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.marcio.agenda2.contact">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nome: "
+            android:textColor="@color/colorTex"
+            android:id="@+id/txtNome"
+            android:layout_alignTop="@+id/photoContact"
+            android:layout_toRightOf="@+id/photoContact"
+            android:layout_toEndOf="@+id/photoContact" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Telefone: "
+            android:textColor="@color/colorTex"
+            android:id="@+id/txtTelfone"
+            android:layout_below="@+id/tvNome"
+            android:layout_toRightOf="@+id/photoContact"
+            android:layout_toEndOf="@+id/photoContact" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvNome"
+            android:textColor="@color/colorTex"
+            android:text="Marcio Ariani"
+            android:layout_below="@+id/txtNome"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvTelefone"
+            android:textColor="@color/colorTex"
+            android:text="9966-4443"
+            android:layout_below="@+id/txtTelfone"
+            android:layout_alignRight="@+id/tvNome"
+            android:layout_alignEnd="@+id/tvNome" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/photoContact"
+        android:contentDescription="Photo"
+        android:background="@drawable/facebookaa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
